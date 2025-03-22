@@ -5,7 +5,11 @@ export function Footer () {
         <div className="footer">
             <div className="logo">
             <Link to = "/" className='logo_link'>Learner's</Link></div>
-            <h3>Copyright@Learner's 2025</h3>
+            <div className="owner">
+            <h3>Copyright@ Siddharth Agrawal</h3>
+            <h3>Copyright@ Utkarsh Singh</h3>
+            <h3>Copyright@ Zubair Khan</h3>
+            </div>
         </div>
     )
 }
