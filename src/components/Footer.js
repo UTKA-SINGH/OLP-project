@@ -6,9 +6,9 @@ export function Footer () {
             <div className="logo">
             <Link to = "/" className='logo_link'>Learner's</Link></div>
             <div className="owner">
-            <h3>Copyright@ Siddharth Agrawal</h3>
+            <h3>Copyright@ Sujal Jha</h3>
             <h3>Copyright@ Utkarsh Singh</h3>
-            <h3>Copyright@ Zubair Khan</h3>
+            <h3>Copyright@ Tanishq Chauhan</h3>
             </div>
         </div>
     )
