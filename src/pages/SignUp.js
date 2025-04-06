@@ -20,7 +20,7 @@ const SignUp = () => {
 
     const fetchUsers = async () => {
         try {
-            const response = await axios.get(`http://13.127.202.65:8080/api/users`);
+            const response = await axios.get(`http://localhost:8080/api/users`);
             setUsers(response.data);
             setError(""); // Clear error on success
         } catch (error) {
@@ -43,9 +43,9 @@ const SignUp = () => {
 
         try {
             if (editing) {
-                await axios.put(`http://13.127.202.65:8080/api/users/${user.id}`, user);
+                await axios.put(`http://localhost:8080/api/users/${user.id}`, user);
             } else {
-                await axios.post(`http://13.127.202.65:8080/api/users`, user);
+                await axios.post(`http://localhost:8080/api/users`, user);
             }
         
             setUser({ id: "", name: "", email: "", password: ""});
@@ -72,7 +72,7 @@ const SignUp = () => {
         }
     
         try {
-            await axios.delete(`http://13.127.202.65:8080/api/users/${id}`);
+            await axios.delete(`http://localhost:8080/api/users/${id}`);
             fetchUsers();
         } catch (error) {
             setError("Failed to delete user. Please try again.");
